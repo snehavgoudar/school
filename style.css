@@ -1,0 +1,14 @@
+#home {
+  background: url('https://img.freepik.com/free-vector/large-school-building-scene_1308-32058.jpg') no-repeat center/cover;
+  height: 100vh; position: relative;
+}
+#home .overlay { position: absolute; inset: 0; background: rgba(241, 149, 149, 0.5); }
+#attendance .container{ background: linear-gradient(90deg,blueviolet,pink,blue);}
+#sports .container{background:linear-gradient(90deg,blueviolet,pink,blue);}
+#assignments .container{background: linear-gradient(90deg,blue,pink,blueviolet);}
+#grades .container{background: linear-gradient(90deg,blueviolet,pink,blue);}
+#activities .container{background: linear-gradient(90deg,blueviolet,pink,blue);}
+#home .content { position: relative; z-index:1; margin-top:100px; }
+html { scroll-behavior: smooth; }
+body { padding-top: 70px; }
+.card-img-top { height:200px; object-fit:cover; }

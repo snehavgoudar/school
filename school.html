@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>My School Website</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">GQT School</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#attendance">Attendance</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sports">Sports</a></li>
+          <li class="nav-item"><a class="nav-link" href="#activities">Cultural Activities</a></li>
+          <li class="nav-item"><a class="nav-link" href="#section">PTM</a></li>
+          <li class="nav-item"><a class="nav-link" href="#assignments">Assignments</a></li>
+          <li class="nav-item"><a class="nav-link" href="#grades">Grades</a></li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="text-center text-dark d-flex align-items-center">
+    <div class="overlay"></div>
+    <div class="container content py-5">
+      <h1 class="display-4 fw-bold text-dark">Welcome to GQT School</h1>
+      <p class="lead text-dark fw-bold">Empowering students to learn, grow, and succeed.</p>
+      <a href="#attendance" class="btn btn-primary btn-lg">Get Started</a>
+    </div>
+  </section>
+
+  <!-- Attendance Section -->
+  <section id="attendance" class="py-5" >
+    <div class="container">
+      <h2 class="mb-4">Student Attendance</h2>
+      <form id="attendanceForm">
+        <div class="row gy-3">
+          <div class="col-md-4">
+            <label for="studentName" class="form-label">Name</label>
+            <input type="text" class="form-control" id="studentName" placeholder="Student Name" required>
+          </div>
+          <div class="col-md-4">
+            <label for="date" class="form-label">Date</label>
+            <input type="date" class="form-control" id="date" required>
+          </div>
+          <div class="col-md-4">
+            <label class="form-label">Status</label><br>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="status" id="present" value="Present" required>
+              <label class="form-check-label" for="present">Present</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="status" id="absent" value="Absent">
+              <label class="form-check-label" for="absent">Absent</label>
+            </div>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-success mt-3">Submit</button>
+      </form>
+      <div id="attendanceRecords" class="mt-5">
+        <h3>Attendance Records</h3>
+        <ul class="list-group" id="recordList"></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sports Section -->
+  <section id="sports" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="mb-4">Sports Activities</h2>
+      <div class="row gy-4">
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="https://tse1.mm.bing.net/th/id/OIP.J6biGVVwvFxtGztUncZmqgHaEo?rs=1&pid=ImgDetMain&o=7&rm=3" class="card-img-top" alt="Football">
+            <div class="card-body">
+              <h5 class="card-title">Football</h5>
+              <p class="card-text">Team training and tournaments.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="https://images5.alphacoders.com/405/thumb-1920-405110.jpg" class="card-img-top" alt="Basketball">
+            <div class="card-body">
+              <h5 class="card-title">Basketball</h5>
+              <p class="card-text">Friendly matches and coaching.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="https://images.pexels.com/photos/3628912/pexels-photo-3628912.jpeg?cs=srgb&dl=pexels-patrick-case-3628912.jpg&fm=jpg" class="card-img-top" alt="Cricket">
+            <div class="card-body">
+              <h5 class="card-title">Cricket</h5>
+              <p class="card-text">Skill-building and competitions.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="activities" class="py-5">
+    <div class="container">
+      <h2 class="mb-4">School & Cultural Activities</h2>
+      <div class="row gy-4">
+        <div class="col-md-6">
+          <div class="card h-100">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/015/735/927/small_2x/national-science-day-february-28th-with-laboratory-equipments-illustration-on-night-space-background-vector.jpg" class="card-img-top" alt="Science Fair">
+            <div class="card-body">
+              <h5 class="card-title">Science Fair</h5>
+              <p class="card-text">Annual event showcasing student projects.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card h-100">
+            <img src="https://img.freepik.com/premium-vector/joyful-kids-celebrating-cultural-festival-classroom_1323048-29447.jpg" class="card-img-top" alt="Cultural Fest">
+            <div class="card-body">
+              <h5 class="card-title">Cultural Fest</h5>
+              <p class="card-text">Performances, art exhibitions & food stalls.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Parent-Teacher Meeting Schedule -->
+ <section id="section" class="py-5"></section>
+  <div class="container">
+  <h2>Parent-Teacher Meeting Schedule</h2>
+  <table class="table table-striped table-bordered table-light text-dark">
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Class</th>
+        <th>Teacher</th>
+        <th>Time Slot</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>10th July 2025</td>
+        <td>Grade 6</td>
+        <td>Mrs. Sharma</td>
+        <td>10:00 AM - 11:30 AM</td>
+      </tr>
+      <tr>
+        <td>11th July 2025</td>
+        <td>Grade 7</td>
+        <td>Mr. Verma</td>
+        <td>12:00 PM - 1:30 PM</td>
+      </tr>
+      <tr>
+        <td>12th July 2025</td>
+        <td>Grade 8</td>
+        <td>Ms. Rani</td>
+        <td>2:00 PM - 3:30 PM</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+  <!-- Assignments Section -->
+  <section id="assignments" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="mb-4 text-light">Assignments</h2>
+      <form id="assignmentForm">
+        <div class="row g-3">
+             <div class="col-md-4">
+            <input type="text" class="form-control" id="assignSubject" placeholder="Subject" required>
+          </div>
+          <div class="col-md-4">
+            <input type="text" class="form-control" id="assignTitle" placeholder="Title" required>
+          </div>
+          <div class="col-md-4">
+            <input type="date" class="form-control" id="dueDate" required>
+          </div>
+          <div class="col-md-4">
+            <button type="submit" class="btn btn-secondary w-100">Add Assignment</button>
+          </div>
+        </div>
+      </form>
+      <ul class="list-group mt-4" id="assignmentList"></ul>
+    </div>
+  </section>
+
+  <!-- Grades Section -->
+  <section id="grades" class="py-5">
+    <div class="container">
+      <h2 class="mb-4">Grades</h2>
+      <form id="gradeForm">
+        <div class="row g-3">
+          <div class="col-md-4">
+            <input type="text" class="form-control" id="studentSubject" placeholder="Student" required>
+          </div>
+          <div class="col-md-4">
+            <input type="text" class="form-control" id="studentSubject" placeholder="Subject" required>
+          </div>
+          <div class="col-md-4">
+            <input type="number" class="form-control" id="gradeValue" placeholder="Grade (0–100)" min="0" max="100" required>
+          </div>
+          <div class="col-md-4">
+            <button type="submit" class="btn btn-warning w-100">Add Grade</button>
+          </div>
+        </div>
+      </form>
+      <ul class="list-group mt-4" id="gradeList"></ul>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-center text-white py-3">
+    &copy; 2025 GQT School. All rights reserved.
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
